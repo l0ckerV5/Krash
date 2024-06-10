@@ -1,0 +1,41 @@
+local Library = loadstring(game:HttpGet("https://github.com/l0ckerV5/Krash/raw/main/Source"))()
+
+local Window = Library:CreateWindow("Krash UI Library", Vector2.new(300, 300), Enum.KeyCode.RightShift)
+
+local Test1Tab = Window:CreateTab("Test1")
+local Test2Tab = Window:CreateTab("Test2")
+
+local Example = Test1Tab:CreateSector("Example", "left")
+
+Example:AddToggle(
+    "Toggle!",
+    false,
+    function(first)
+       Enabled = first
+    end
+)
+
+Example:AddTextbox(
+    "Textbox",
+    100,
+    function(State)
+        Test = State
+    end
+)
+
+Example:AddButton(
+    "Button!",
+    function()
+        print("Button Pressed!")
+    end
+)
+
+Example:AddDropdown(
+    "Dropdown",
+    {"Option1", "Option2", "Option3", "Option4", "Option5"},
+    "Option1",
+    false,
+    function(Option)
+        Choice = "Option"
+    end
+)
