@@ -75,5 +75,20 @@ Example:AddDropdown(
 )
 ```
 
+# Creating Slider:
+
+```
+Example:AddSlider(
+    "Slider",
+    0,
+    50,
+    100,
+    1,
+    function(State)
+       
+    end
+)
+```
+
 # Thanks Message
 > Thanks for using Krash UI Library, its a honor to be the UI Designer of a future scripter. If you want to contact me, please send a friend request on discord, my username is l0ckerV5 Thanks! Happy Coding!
